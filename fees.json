@@ -1,0 +1,90 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "title": "Commertize fee schedule",
+  "description": "Flat fees for sponsors tokenizing a real-world asset on Commertize, and the minimum-investment rule.",
+  "publisher": {
+    "name": "Commertize, Inc.",
+    "url": "https://commertize.com"
+  },
+  "license": "CC-BY-4.0",
+  "version": "0.1.0",
+  "date_modified": "2026-10-20",
+  "notice": "General information about how Commertize operates. It is not legal, tax or investment advice, and it is not an offer to sell or a solicitation of an offer to buy any security.",
+  "currency": "USD",
+  "principles": [
+    "Flat fees, priced by complexity rather than asset value",
+    "No fee is tied to capital raised",
+    "Third-party costs (entity counsel, identity checks, network fees) are paid by the sponsor directly where possible, otherwise passed through at cost, itemized and never marked up"
+  ],
+  "setup": {
+    "basis": "complexity (contracts, counterparties, jurisdictions, asset classes)",
+    "tiers": [
+      {
+        "tier": 1,
+        "fee": 15000,
+        "when": "Single asset, single entity, single jurisdiction, up to 3 material contracts"
+      },
+      {
+        "tier": 2,
+        "fee": 25000,
+        "when": "2 to 5 jurisdictions, a multi-class cap table, 4 to 10 material contracts, or supermajority consent"
+      },
+      {
+        "tier": 3,
+        "fee": 50000,
+        "when": "More than 10 material contracts, a multi-asset portfolio, cross-border structure, or contested title"
+      }
+    ],
+    "riders": [
+      {
+        "name": "Contract review beyond the tier baseline",
+        "fee_range": [
+          1500,
+          2500
+        ],
+        "unit": "per contract"
+      },
+      {
+        "name": "Each additional asset class",
+        "fee_range": [
+          5000,
+          10000
+        ],
+        "unit": "per class"
+      }
+    ],
+    "payment_terms": "50% at signing, 50% on delivery of the work product"
+  },
+  "operations": {
+    "per_holder_per_month": 10,
+    "reporting_fee": {
+      "fee": 750,
+      "earned_on": "delivery of each payment-file report (a reporting deliverable); the fee is not charged on, or measured by, any distribution or movement of funds"
+    },
+    "starts": "first distribution"
+  },
+  "design_partner_option": {
+    "setup": 15000,
+    "notes": "Tier 1 setup at a flat $15,000 with no riders, regardless of complexity, offered to a limited number of sponsors in exchange for a named reference and case study. Third-party costs at cost. Operations fees apply from the first distribution."
+  },
+  "minimum_investment": {
+    "rule": "max(5000, ceil(target_raise / 1500), issuer_minimum)",
+    "plain": "The minimum ticket is the largest of $5,000, the target raise divided by 1,500 (rounded up), and the issuer's own minimum.",
+    "examples": [
+      {
+        "target_raise": 5000000,
+        "minimum": 5000
+      },
+      {
+        "target_raise": 15000000,
+        "minimum": 10000
+      },
+      {
+        "target_raise": 30000000,
+        "minimum": 20000
+      }
+    ]
+  },
+  "source": "Commertize published fee schedule, 2026-10-20"
+}

@@ -1,0 +1,249 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "title": "Commertize sponsor glossary: twelve real-world asset classes",
+  "description": "For each asset class: what it is, what tokenizing it means operationally, and what a sponsor supplies.",
+  "publisher": {
+    "name": "Commertize, Inc.",
+    "url": "https://commertize.com"
+  },
+  "license": "CC-BY-4.0",
+  "version": "0.1.0",
+  "date_modified": "2026-10-20",
+  "notice": "General information about how Commertize operates. It is not legal, tax or investment advice, and it is not an offer to sell or a solicitation of an offer to buy any security.",
+  "definition_of_tokenize": "To tokenize an asset is to issue interests in, or backed by, the asset or the entity that owns it, and to keep the ownership register for those interests on a blockchain as tokens, with transfer restrictions built into the token.",
+  "status_meaning": "Accepting sponsor inquiries means Commertize will review a sponsor's materials for this class. It is not a statement that any asset in the class has been tokenized or will be on any timeline.",
+  "classes": [
+    {
+      "key": "c01",
+      "name": "Commercial real estate",
+      "what_it_is": "Income-producing property: single-tenant net lease, industrial, multifamily, self-storage, hospitality and healthcare property companies.",
+      "tokenize_it_means": "The LLC that already holds title issues a new investor class, and that class's register is kept on chain as tokens. Distributions follow the operating agreement.",
+      "sponsor_supplies": [
+        "Deed and title report",
+        "Operating agreement and member list",
+        "Rent roll and leases (or lease abstracts)",
+        "Trailing-12-month operating statement",
+        "Current appraisal",
+        "Existing loan documents and lender acknowledgment of the new class"
+      ],
+      "vocabulary": [
+        "net lease",
+        "cap rate",
+        "DSCR",
+        "rent roll",
+        "estoppel",
+        "due-on-transfer"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c02",
+      "name": "Private-company equity",
+      "what_it_is": "Shares or units of an operating private company.",
+      "tokenize_it_means": "The company issues a new class (often non-voting preferred or units) or converts its existing cap table to an on-chain register.",
+      "sponsor_supplies": [
+        "Charter and bylaws or operating agreement",
+        "Current cap table",
+        "Financial statements",
+        "Most recent valuation (priced round or 409A)",
+        "Transfer restrictions, ROFR and drag-along terms"
+      ],
+      "vocabulary": [
+        "cap table",
+        "preferred",
+        "ROFR",
+        "409A",
+        "holder of record"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c03",
+      "name": "Private credit and receivables",
+      "what_it_is": "Loans and contracted receivables that pay a defined stream.",
+      "tokenize_it_means": "An existing credit fund issues a new class or series of notes, or a purchaser entity buys the receivables and issues notes backed by them.",
+      "sponsor_supplies": [
+        "Loan tape or receivables schedule",
+        "Underlying contracts (checked for assignability)",
+        "UCC-1 search results",
+        "Servicing agreement",
+        "Payment history"
+      ],
+      "vocabulary": [
+        "receivables",
+        "true sale",
+        "UCC-1",
+        "assignability",
+        "waterfall"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c04",
+      "name": "Oil and gas royalties and minerals",
+      "what_it_is": "Mineral and royalty interests that receive a share of production revenue.",
+      "tokenize_it_means": "The existing mineral or royalty LLC issues a new class, so royalty deeds and division orders stay where they are.",
+      "sponsor_supplies": [
+        "Title chain and royalty deeds",
+        "Division orders and operator pay decks",
+        "Production history from state records",
+        "Revenue statements"
+      ],
+      "vocabulary": [
+        "royalty interest",
+        "division order",
+        "decline curve",
+        "net revenue interest"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c05",
+      "name": "Energy infrastructure: solar, storage and hydro",
+      "what_it_is": "Operating generation and storage projects with contracted revenue.",
+      "tokenize_it_means": "The sponsor's holding company or project company issues an investor class that receives project cash flow.",
+      "sponsor_supplies": [
+        "Power purchase or capacity agreements",
+        "Interconnection agreement",
+        "Metering data separating generation and capacity",
+        "Tax-equity documents and consents",
+        "Operating history"
+      ],
+      "vocabulary": [
+        "PPA",
+        "interconnection",
+        "capacity",
+        "tax equity",
+        "metering"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c06",
+      "name": "Data centers",
+      "what_it_is": "Powered shell or turnkey facilities under a credit lease, and operating colocation.",
+      "tokenize_it_means": "The title-holding LLC issues an investor class; for a levered operator, a holding company above the lender's change-of-control perimeter issues non-voting units.",
+      "sponsor_supplies": [
+        "Lease and tenant credit information",
+        "Power and site-control documents",
+        "Credit agreement and lender consent",
+        "Operating statements"
+      ],
+      "vocabulary": [
+        "powered shell",
+        "colocation",
+        "site control",
+        "change of control"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c07",
+      "name": "GPU and compute",
+      "what_it_is": "Compute equipment and the contracted capacity revenue it earns.",
+      "tokenize_it_means": "The machine-owning entity or a holding company above it issues units that receive lease or capacity revenue, with lender consent and estoppel obtained first where the equipment is financed.",
+      "sponsor_supplies": [
+        "Equipment schedule and serial numbers",
+        "Offtake or capacity contracts",
+        "Lender consent and estoppel",
+        "Utilization and revenue history"
+      ],
+      "vocabulary": [
+        "offtake",
+        "estoppel",
+        "utilization",
+        "capacity revenue"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c08",
+      "name": "Farmland",
+      "what_it_is": "Agricultural land and its lease or crop revenue.",
+      "tokenize_it_means": "An existing farm LLC issues a new investor class, after a check that state farm-ownership rules allow it.",
+      "sponsor_supplies": [
+        "Deed and title",
+        "Farm leases",
+        "Yield and revenue history",
+        "Water and access rights documentation"
+      ],
+      "vocabulary": [
+        "cash rent",
+        "crop share",
+        "water rights"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c09",
+      "name": "Sports venue receivables",
+      "what_it_is": "Contracted, assignable venue revenue such as premium seating, naming rights or concessions contracts.",
+      "tokenize_it_means": "A purchaser entity holds the receivable and issues notes backed by it; league and counterparty consents come first.",
+      "sponsor_supplies": [
+        "Underlying revenue contracts",
+        "Consent from the league and counterparties",
+        "Existing bond-indenture pledges on the same revenue",
+        "Payment history"
+      ],
+      "vocabulary": [
+        "receivable",
+        "anti-assignment",
+        "lockbox"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c10",
+      "name": "Music and IP royalties",
+      "what_it_is": "Royalty income from music catalogs and other intellectual property.",
+      "tokenize_it_means": "A catalog or publishing company issues a class that tracks royalty income.",
+      "sponsor_supplies": [
+        "Chain of title",
+        "Royalty statements",
+        "Termination-rights analysis"
+      ],
+      "vocabulary": [
+        "catalog",
+        "publishing",
+        "chain of title"
+      ],
+      "status": "not offered at this time"
+    },
+    {
+      "key": "c11",
+      "name": "Producing mines",
+      "what_it_is": "Operating mines and royalty or streaming interests in their output.",
+      "tokenize_it_means": "The operating company or an existing royalty holder issues a new class.",
+      "sponsor_supplies": [
+        "Technical report (S-K 1300 or NI 43-101)",
+        "Permits",
+        "Production and revenue history",
+        "Reclamation obligations"
+      ],
+      "vocabulary": [
+        "NSR royalty",
+        "S-K 1300",
+        "offtake"
+      ],
+      "status": "accepting sponsor inquiries"
+    },
+    {
+      "key": "c12",
+      "name": "Vaulted collectibles",
+      "what_it_is": "Art, watches, wine and other collectibles held in a vault.",
+      "tokenize_it_means": "A title token represents one specific item held in custody.",
+      "sponsor_supplies": [
+        "Provenance",
+        "Independent appraisal",
+        "Custody agreement"
+      ],
+      "vocabulary": [
+        "provenance",
+        "custody",
+        "title token"
+      ],
+      "status": "not offered at this time"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "title": "Rule 506(c) accredited-investor verification checklist",
+  "description": "The steps, documents and timing involved when an issuer verifies purchasers in a Rule 506(c) offering, mapped to the text of 17 CFR 230.506(c)(2)(ii).",
+  "publisher": {
+    "name": "Commertize, Inc.",
+    "url": "https://commertize.com"
+  },
+  "license": "CC-BY-4.0",
+  "version": "0.1.0",
+  "date_modified": "2026-10-20",
+  "notice": "General information about how Commertize operates. It is not legal, tax or investment advice, and it is not an offer to sell or a solicitation of an offer to buy any security.",
+  "primary_source": {
+    "rule": "17 CFR 230.506(c)",
+    "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-230/section-230.506"
+  },
+  "roles": {
+    "issuer": "Takes reasonable steps to verify that every purchaser is an accredited investor and elects the verification provider.",
+    "verification_provider": "The third party the issuer engages to collect documents and issue a written confirmation.",
+    "investor": "Completes identity verification and supplies documents or a confirmation letter to the issuer's verification provider.",
+    "commertize": "Hosts the offering workflow and transmits the investor to and from the verification provider the issuer engages. Commertize does not verify accredited status, does not determine it, and does not issue verification letters."
+  },
+  "rule_summary": {
+    "purchasers": "All purchasers in a Rule 506(c) offering are accredited investors. [17 CFR 230.506(c)(2)(i)]",
+    "standard": "The issuer takes reasonable steps to verify accredited status. The rule lists non-exclusive methods that are deemed reasonable steps, provided the issuer does not know the purchaser is not accredited. [17 CFR 230.506(c)(2)(ii)] The listed methods apply to natural persons; other purchasers are verified by other reasonable steps."
+  },
+  "steps": [
+    {
+      "step": 1,
+      "id": "identity",
+      "name": "Identity verification",
+      "who": "investor",
+      "what": "Complete identity verification (KYC) with the platform or issuer before the accreditation step opens.",
+      "documents": [
+        "Government-issued photo ID"
+      ],
+      "timing": "Before any accreditation request."
+    },
+    {
+      "step": 2,
+      "id": "provider_handoff",
+      "name": "Continue to the issuer's verification provider",
+      "who": "investor",
+      "what": "Follow the issuer's link to its verification provider and return when done.",
+      "documents": [],
+      "timing": "Per offering; a verification for another issuer cannot be used for this offering."
+    },
+    {
+      "step": 3,
+      "id": "method",
+      "name": "Provide evidence under one verification method",
+      "who": "investor + verification_provider",
+      "what": "The provider applies one of the methods in 17 CFR 230.506(c)(2)(ii).",
+      "methods": [
+        {
+          "code": "A",
+          "basis": "Income",
+          "documents": [
+            "IRS forms reporting income for the two most recent years (e.g. W-2, 1099, Schedule K-1, Form 1040)",
+            "Written representation of a reasonable expectation of reaching the required income level in the current year"
+          ],
+          "cite": "17 CFR 230.506(c)(2)(ii)(A)"
+        },
+        {
+          "code": "B",
+          "basis": "Net worth",
+          "documents": [
+            "Asset documentation dated within the prior three months (bank or brokerage statements, certificates of deposit, tax assessments, independent appraisals)",
+            "Consumer report from at least one nationwide consumer reporting agency, for liabilities",
+            "Written representation that all liabilities needed to determine net worth have been disclosed"
+          ],
+          "cite": "17 CFR 230.506(c)(2)(ii)(B)"
+        },
+        {
+          "code": "C",
+          "basis": "Third-party written confirmation",
+          "documents": [
+            "Written confirmation from a registered broker-dealer, an SEC-registered investment adviser, a licensed attorney in good standing, or a registered CPA in good standing, stating that it took reasonable steps to verify accredited status within the prior three months and determined the purchaser is accredited"
+          ],
+          "cite": "17 CFR 230.506(c)(2)(ii)(C)"
+        },
+        {
+          "code": "E",
+          "basis": "Previously verified by the same issuer",
+          "documents": [
+            "Written representation at the time of sale, within five years of the issuer's prior verification"
+          ],
+          "cite": "17 CFR 230.506(c)(2)(ii)(E)"
+        }
+      ],
+      "omitted": "Method (D) is omitted: it applies only to investors who bought in the same issuer's Rule 506(b) offering before September 23, 2013.",
+      "timing": "Letters and asset documents must be dated within the prior three months where the method says so."
+    },
+    {
+      "step": 4,
+      "id": "letter_on_file",
+      "name": "Confirmation letter on file",
+      "who": "verification_provider",
+      "what": "The provider issues a letter for this offering, addressed in the name on the investor's verified identity.",
+      "documents": [
+        "Verification letter"
+      ],
+      "timing": "Commertize practice: a letter is usable until three months from its date or the provider's own expiry, whichever is earlier. The rule requires that the confirmer verified the purchaser within the prior three months."
+    },
+    {
+      "step": 5,
+      "id": "recheck",
+      "name": "Re-check at acceptance and at closing",
+      "who": "issuer",
+      "what": "Commertize practice: the letter's date is checked again when the subscription is accepted and when the offering closes, and a letter older than three months is replaced.",
+      "documents": [],
+      "timing": "At acceptance and at closing."
+    },
+    {
+      "step": 6,
+      "id": "minimum_investment",
+      "name": "Minimum investment",
+      "who": "issuer",
+      "what": "Each offering sets its minimum ticket; see fees.json for the platform floor.",
+      "documents": [],
+      "timing": "Fixed when the offering opens."
+    }
+  ],
+  "issuer_obligations_around_the_offering": [
+    {
+      "id": "form_d",
+      "name": "Form D notice",
+      "timing": "Filed with the SEC no later than 15 calendar days after the first sale.",
+      "cite": "17 CFR 230.503(a)(1)"
+    },
+    {
+      "id": "edgar_access",
+      "name": "EDGAR access for the issuer",
+      "timing": "Obtain the issuer's CIK and EDGAR credentials before the first sale."
+    },
+    {
+      "id": "bad_actor",
+      "name": "Rule 506(d) bad-actor check",
+      "timing": "Completed before the first sale; covered-person questionnaires are the usual way to show reasonable care.",
+      "cite": "17 CFR 230.506(d)"
+    },
+    {
+      "id": "state_notice",
+      "name": "State notice filings",
+      "timing": "As each state where purchasers reside requires for a covered security.",
+      "cite": "15 U.S.C. 77r(b)(4)(F)"
+    }
+  ]
+}
