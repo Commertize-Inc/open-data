@@ -8,8 +8,8 @@
     "url": "https://commertize.com"
   },
   "license": "CC-BY-4.0",
-  "version": "0.1.0",
-  "date_modified": "2026-10-20",
+  "version": "0.1.1",
+  "date_modified": "2026-10-31",
   "notice": "General information about how Commertize operates. It is not legal, tax or investment advice, and it is not an offer to sell or a solicitation of an offer to buy any security.",
   "currency": "USD",
   "principles": [
@@ -54,7 +54,7 @@
         "unit": "per class"
       }
     ],
-    "payment_terms": "50% at signing, 50% on delivery of the work product"
+    "payment_terms": "Payment terms are set out in the engagement letter; the fee is owed whether or not any offering closes."
   },
   "operations": {
     "per_holder_per_month": 10,
@@ -86,5 +86,5 @@
       }
     ]
   },
-  "source": "Commertize published fee schedule, 2026-10-20"
+  "source": "Commertize fee schedule, version 0.1.1, 2026-10-31"
 }
